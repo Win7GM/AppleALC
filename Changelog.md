@@ -1,11 +1,62 @@
 AppleALC Changelog
 ==================
+#### v1.6.5
+- Added ALC236 for Lenovo IdeaPad 330S-14IKB by Ab2774
+- Some updates and revisions for ALC236 LayoutID 36 by volcbs
+- Added ALC897 for GIGABYTE Z590 Gaming X by Sergey_Galan 
+- Added ALC294 layout-id 99 for ASUS ROG GU502LV by htmambo
+- Added ALC256 layout-id 99 for XiaoMiPro 2020 by htmambo
+- Added ALC897 Layout-id 23 for Chuwi-CoreBookX14 by weachy
+- Added ALC256 layout-id 20 for Asus AIO PC V222UAK-WA541T by andreszerocross
+- Added ALC236 layout-id 23 for Lenovo Air 13 IML(S530-13IML) by JudySL
+
+#### v1.6.4
+- Added 10.4 and 10.5 support, and 10.6 and 10.7 support in 32-bit mode
+- Update STAC9200 layout-id 11 to support 10.4 to 10.6
+- Added STAC9205 layout-id 11 for Dell Inspiron 1520 and Latitude D630
+- Fixed crash on GPUs without digital audio support introduced in 1.6.1
+- Added ALC623 layout-id 21 for Lenovo M70T by Andres ZeroCross
+- Seperated Laptop/Desktop patches for 8086:A171 to fix HDMI audio on Intel NUC
+- Added ALC236 layout-id 36 for Lenovo Ideapad 510s 14isk by volcbs
+- Added ALC235 layout-id 12 for Dell Optiplex 7040 MT by wern-apfel
+- Improved CA0132 layout-id 7 by removing not needed MuteGPIO by wern-apfel
+- Added ALC235 layout-id 8 for Intel NUC 8 by wern-apfel
+- Added ALC269 layout-id 69 for MSI GF63 Thin 9SEXR  by Vorshim92
+- Added ALC289 layout-id 93 for XPS 9500 4k by sweet3c
+- Added ALC892 layout-id 32 for custom G4/G5mod
+
+#### v1.6.3
+- Update ALC289 layout-id 87 by GitNaufal
+- Update ALC235 layout-id 18 for AsRock 310 BB by viorel78
+
+#### v1.6.2
+- Added constants for macOS 12 support
+- Added 10.6 and 10.7 support in 64-bit mode
+- Fixed HDMI Audio 0xA171 for Acer VX5-591G by dongcodebmt
+- Added ALC256 layout-id 70 for Hasee KingBook X57S1 by m0d16l14n1
+- Update WakeConfigData for ALC255 layout-id 96 by wozhinengpa
+
 #### v1.6.1
 - Fixed broken data in CS4206's layout76.xml
 - Added PathMapID 4206 and 8800 for ALC885's Layout 67 and 73
 - Fixed broken data in ALC289's layout87.xml
 - Fixed automatic resource formatting on build
 - Fixed ALC885's Info.plist Platforms entry
+- Added 400 Series (0xF1C8 Z490 + Intel 11 Gen) PCH HD Audio Controller
+- Fixed `alc-verb` device indexing giving varying results over reboots
+- Added device listing with indices via `-L`/`-l` in `alc-verb`
+- Added AppleALCU kext variant for digital-only audio setup
+- Disabled kext patching for verb support and delays when not requested
+- FIxed replace count in `WhiskeyLake` HDA patches
+- Separated Intel `WhiskeyLake` laptop and desktop patches
+- Added ALC1220 layout-id 35 for MSI GP75 9SD by Win7GM
+- Added ALC1200 (display as ALCS1200A) layout-id 69 for Asrock Z490M ITX/AC by Lorys89 & Vorshim92
+- Added ALC293 layout-id 30 for HASEE ZX8-CT5DA by RushiaBoingBoing
+- Added ALC255 layout-id 96 for dell 5559 by Bhavin
+- Fix mute on Conxexant CX 20724 by Human7900
+- Added ALC1220 layout-id 17 for Gigabyte Z490 Vision G manual SP/HP by NIBLIZE
+- Added ALC255 layout-id 82 for minisforum U820 by daliansky
+- Added ALC282 layout-id 21 for TinyMonster ECO by DalianSky
 
 #### v1.6.0
 - Added `use-layout-id` property to use `layout-id` as is on Macs
